@@ -24,6 +24,9 @@ class SearchBar extends Component{
     handleSubmitForm(event){
         event.preventDefault();
         this.props.SearchCityByName(this.state.cityName);
+        this.setState({
+            cityName :''
+        })
     }
     render()
     {
