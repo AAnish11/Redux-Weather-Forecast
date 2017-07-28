@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import TopSearch from '../containers/top-search';
 
+import SearchBar from '../containers/search_bar'
+import WeatherList from '../containers/weather-list';
 export default class App extends Component {
   render() {
     return (
-      <div><TopSearch /></div>
+      <div><SearchBar /> <WeatherList /></div>
     );
   }
 }

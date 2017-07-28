@@ -1,6 +1,9 @@
 import { combineReducers } from 'redux';
-import SearchReducer from './search-reducer';
-const rootReducer = combineReducers({  
-  SearchReducer : SearchReducer
+
+import { WeatherForecast } from './weather-forecast';
+
+const rootReducer = combineReducers({
+  weatherForecast : WeatherForecast
 });
+
 export default rootReducer;
